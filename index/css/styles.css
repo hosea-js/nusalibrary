@@ -47,7 +47,7 @@ nav li {
     height: 50px;
 }
 
-nav a {
+nav .nav-a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -55,6 +55,10 @@ nav a {
     align-items: center;
     color: black;
     transition: background-color 0.15s ease-in-out;
+}
+
+nav .close-button{
+    transform: translate(5px, 10px);
 }
 
 nav .title-nav {
