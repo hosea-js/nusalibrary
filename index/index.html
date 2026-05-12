@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library | SMPK Ignatius Slamet Riyadi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <nav>
+        <ul class="sidebar">
+            <li id="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></a></svg></li>
+            <li class="sidebar-header">
+                <div class="title-sidebar">Perpustakaan Sekolah</div>
+                <div class="subtitle-sidebar">SMPK Ignatius Slamet Riyadi</div>
+            </li>
+            <li><a class="sidebar-a" href="index.html">Beranda</a></li>
+            <li><a class="sidebar-a" href="#">Katalog Buku</a></li>
+            <li><a class="sidebar-a" href="#">Peminjaman</a></li>
+            <li><a class="sidebar-a" href="#">Statistik</a></li>
+        </ul>
+        <ul>
+            <li class="title-nav">Perpustakaan Sekolah</li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#">Katalog Buku</a></li>
+            <li><a href="#">Peminjaman</a></li>
+            <li><a href="#">Statistik</a></li>
+            <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to E-Library SMPK Ignatius Slamet Riyadi</h1>
+    <p><a href="index2.html">Go to DUMMY2</a></p>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
