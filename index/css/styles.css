@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .landingpage-title {
@@ -38,7 +39,6 @@ nav {
     background-color: rgba(249, 248, 246, 0.55);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     border-radius: 13px;
-    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -109,14 +109,21 @@ nav li:first-child {
     height: 100dvh;
     width: 250px;
     z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
     background-color: rgba(239, 233, 227, 0.65);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
 
 /* .sidebar #title-nav1 {
     padding: 20px 20px 0px 20px;
