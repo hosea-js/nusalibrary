@@ -35,6 +35,8 @@ body{
     z-index: -1;
 }
 
+/* Main Navigation bar Styles */
+
 nav {
     background-color: rgba(249, 248, 246, 0.55);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -113,6 +115,8 @@ nav li:first-child {
     margin-right: auto;
 }
 
+/* Sidebar Styles */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -123,6 +127,7 @@ nav li:first-child {
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     background-color: rgba(239, 233, 227, 0.65);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -176,8 +181,17 @@ nav li:first-child {
 }
 
 .sidebar-a {
+    height: 60px;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.15s ease-in-out;
     display: flex;
     align-items: center;
+}
+
+.sidebar-a:hover {
+    background-color: #ededed63;
 }
 
 .sidebar li{
@@ -192,6 +206,7 @@ nav li:first-child {
     display: none;
 }
 
+/* Responsive Styles */
 
 @media(max-width: 800px){
     .hideOnMobile{
