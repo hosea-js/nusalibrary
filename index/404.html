@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>404 Not Found</h1>
-    <p>The page you are looking for does not exist.</p>
-    <p><a href="index.html">Go back to Home</a></p>
+        <nav>
+        <ul>
+            <li class="navbar-header">
+                <div class="title-header">Perpustakaan Sekolah</div>
+                <div class="subtitle-header">SMPK Ignatius Slamet Riyadi</div>
+            </li>
+            <li class="hideOnMobile"><a class="nav-a" href="index.html">Beranda</a></li>
+            <li class="hideOnMobile"><a class="nav-a" href="#">Katalog Buku</a></li>
+            <li class="hideOnMobile"><a class="nav-a" href="#">Peminjaman</a></li>
+            <li class="hideOnMobile"><a class="nav-a corner" href="#">Statistik</a></li>
+            <li class="menu-button" onclick="toggleSidebar()"><a class="nav-a corner" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+        <ul class="sidebar">
+            <li class="close-button" onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></a></svg></li>
+            <li class="sidebar-header">
+                <div class="title-sidebar">Perpustakaan Sekolah</div>
+                <div class="subtitle-sidebar">SMPK Ignatius Slamet Riyadi</div>
+            </li>
+            <div class="sidebar-links">
+            <li><a class="sidebar-a" href="index.html">Beranda</a></li>
+            <li><a class="sidebar-a" href="#">Katalog Buku</a></li>
+            <li><a class="sidebar-a" href="#">Peminjaman</a></li>
+            <li><a class="sidebar-a" href="#">Statistik</a></li>
+            </div>
+        </ul>
+    <div class="main-text">
+        <h1>404 Not Found</h1>
+        <p>The page you are looking for does not exist.</p>
+        <p class="back-home-btn btn-page404-alignment"><a href="index.html">Go back to Home</a></p>
+    </div>
+
+    <script src="script/javascript.js" defer></script>
 </body>
 </html>
