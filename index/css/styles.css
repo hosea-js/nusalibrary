@@ -216,7 +216,7 @@ nav li:first-child {
 
 /* Responsive Styles */
 
-@media(max-width: 800px){
+@media(max-width: 822px){
     .hideOnMobile{
         display: none;
     }
@@ -292,10 +292,26 @@ nav li:first-child {
     transform: translateY(20px);
 }
 
-.h2-landingpage {
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-bottom: 325px;
-    margin-top: 235px;
+/* Content Styles */
+
+.benefits {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.benefits-title {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.benefits-title h2 {
+    max-width: 700px;
     text-align: right;
+}
+
+.benefits-content {
+    max-width: 700px;
 }
