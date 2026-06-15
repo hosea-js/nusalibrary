@@ -216,7 +216,7 @@ nav li:first-child {
 
 /* Responsive Styles */
 
-@media(max-width: 822px){
+@media(max-width: 1076px){
     .hideOnMobile{
         display: none;
     }
