@@ -1,19 +1,126 @@
 body {
-    background-color: #F5F5F5;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F5F5F5;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
+    margin: 0;
 }
 
+/* Container styles */
+
 .main-auth-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     background-color: #FFFFFF;
-    padding: 40px;
+    padding: 40px 100px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     outline: 2px solid #E0E0E0;
+    width: 90%;
+    max-width: 999px;
+}
+
+.form-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.illustration-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body and form styles */
+
+.subtitle-text {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 1px;
+}
+
+.auth-text {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input {
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: #000000;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.btn-primary {
+    background-color: #6096BA;
+    color: #FFFFFF;
+    border: none;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4A7A9B;
+}
+
+.illustration {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: flex-end;
+}
+
+.signup-link a {  
+    text-decoration: none;
+    color: #6096BA;
+}
+
+@media (max-width: 1234px) {
+    .main-auth-container {
+        flex-direction: column;
+        padding: 20px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .form-container {
+        margin-left: 0;
+    }
+
+    .illustration {
+        display: none;
+    }
 }
