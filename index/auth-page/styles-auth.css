@@ -23,6 +23,10 @@ body {
     max-width: 999px;
 }
 
+.signup-auth-container {
+    display: flex;
+}
+
 .form-container {
     display: flex;
     flex: 1;
@@ -32,6 +36,7 @@ body {
 
 .illustration-container {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -106,6 +111,13 @@ form {
 .signup-link a {  
     text-decoration: none;
     color: #6096BA;
+}
+
+.illustration-subtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 1234px) {

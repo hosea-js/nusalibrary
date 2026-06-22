@@ -12,3 +12,6 @@
         function updateTitle(action) {
             document.title = `${action} | SMPK Ignatius Slamet Riyadi E-Library`;
         }
+
+        // Sign In/Up Form Toggle or Animation
+        

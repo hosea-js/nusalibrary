@@ -19,17 +19,32 @@
                 <p class="subtitle-text">Selamat datang lagi! kita bener bener bener bener excited buat liat kamu lagi!</p>
                 <form id="signinForm">
                     <p class="auth-text">Nama Pengguna</p>
-                    <input type="email" placeholder="Masukan username, email, atau nomor telepon" required>
+                    <input type="email" placeholder="Masukan Username, email, atau nomor telepon" required>
                     <p class="auth-text">Password</p>
                     <input type="password" placeholder="Masukan Password Anda" required>
                     <button class="btn btn-primary" type="submit">Beri Aku Masuk!</button>
                 </form>
-                <p class="signup-link">Gapunya Akun? <a href="../signup/signup.html">Daftar aja disini!</a></p>
+                <p class="signup-link">Gapunya Akun? <a onClick="updateTitle('Daftar')" id="signUpExc" href="#">Daftar aja disini!</a></p>
             </div>
             <div class="illustration-container">
                 <img src="../assets/illustrastion_for_web.svg" alt="Illustration" class="illustration">
+                <p class="illustration-subtext">Baca buku? Udah ngga masalah lagi. Pakai Perpustakaan Digital SMPK Ignatius Slamet Riyadi aja!</p>
             </div>
-    </div>
+
+            <!-- Signup Container-->
+            <form id="signupForm" class="form-container">
+                <h1>Daftar</h1>
+                <p class="subtitle-text">Halo!! Senang bertemu denganmu! Bikin akun yuk dan lanjutin petualangan membaca kamu!</p>
+                <p class="auth-text">Username</p>
+                <input type="text" placeholder="Masukan Username" required>
+                <p class="auth-text">Email</p>
+                <input type="email" placeholder="Masukan Email Anda" required>
+                <p class="auth-text">Password</p>
+                <input type="password" placeholder="Masukan Password Anda" required>
+                <button class="btn btn-primary" type="submit">Buat Akun!</button>
+                <p class="signup-link">Udah punya akun? <a onClick="updateTitle('Masuk')" id="signInExc" href="#">Masuk aja disini!</a></p>
+            </form>
+        </div>
 
     <script src="../script/javascript.js" defer></script>
 </body>

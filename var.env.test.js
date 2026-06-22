@@ -5,3 +5,4 @@ console.log(process.env.db_user);
 console.log(process.env.db_password);
 console.log(process.env.db_name);
 console.log(process.env.db_port);
+console.log(process.env.google_client_id);
