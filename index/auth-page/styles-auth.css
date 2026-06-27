@@ -31,7 +31,8 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin-left: 0px;
+    position: relative;
+    min-width: 0;
 }
 
 .illustration-container {
@@ -44,14 +45,17 @@ body {
     border-radius: 15px;
 }
 
-#signupForm {
-    display: block;
+.forms{
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    transition: height 0.5s ease;
 }
 
-#signinForm {
-    display: none;
+.forms form {
+    position: absolute;
+    inset: 0;
 }
-
 /* Body and form styles */
 
 .subtitle-text {
@@ -130,6 +134,39 @@ form {
     text-align: center;
 }
 
+/* Sign In and Sign Up Animation */
+
+#signinForm, #signupForm {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#signinForm {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#signupForm {
+    opacity: 0;
+    transform: translateX(100px);
+    pointer-events: none;
+}
+
+#signinForm.hidden{
+    opacity: 0;
+    transform: translateX(-100px);
+    pointer-events: none;
+}
+
+#signupForm.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* Responsive Design */
+
 @media (max-width: 1234px) {
     .main-auth-container {
         flex-direction: column;
@@ -142,7 +179,7 @@ form {
         margin-left: 0;
     }
 
-    .illustration {
+    .illustration-container {
         display: none;
     }
 }

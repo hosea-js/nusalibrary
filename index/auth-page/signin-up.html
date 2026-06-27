@@ -14,7 +14,8 @@
 <body onload="updateTitle('Masuk')" style="background-color: #F5F5F5;">
     <div class="main-auth-container">
             <div class="form-container">
-                <!-- <img src="../assets/favico.svg" alt="Logo" class="logo"> -->
+                <div class="forms">
+                <!-- Signin Form-->
                 <form id="signinForm">
                     <h1>Masuk</h1>
                     <p class="subtitle-text">Selamat datang lagi! kita bener bener bener bener excited buat liat kamu lagi!</p>
@@ -23,28 +24,31 @@
                     <p class="auth-text">Password</p>
                     <input type="password" placeholder="Masukan Password Anda" required>
                     <button class="btn btn-primary" type="submit">Beri Aku Masuk!</button>
-                    <p class="signup-link">Gapunya Akun? <a onClick="updateTitle('Daftar')" id="signUpExc" href="#">Daftar aja disini!</a></p>
+                    <p class="signup-link">Gapunya Akun? <a onClick="signUpBtn()" id="signUpBtn" href="javascript:void(0)">Daftar aja disini!</a></p>
                 </form>
+
+                <!-- Signup Form-->
+                <form id="signupForm">
+                    <h1>Daftar</h1>
+                    <p class="subtitle-text">Halo!! Senang bertemu denganmu! Bikin akun yuk dan lanjutin petualangan membaca kamu!</p>
+                    <p class="auth-text">Username</p>
+                    <input type="text" placeholder="Masukan Username" required>
+                    <p class="auth-text">Email</p>
+                    <input type="email" placeholder="Masukan Email Anda" required>
+                    <p class="auth-text">Password</p>
+                    <input type="password" placeholder="Masukan Password Anda" required>
+                    <button class="btn btn-primary" type="submit">Buat Akun!</button>
+                    <p class="signup-link">Udah punya akun? <a onClick="signInBtn()" id="signInBtn" href="javascript:void(0)">Masuk aja disini!</a></p>
+                </form>
+                </div>
             </div>
+
             <div class="illustration-container">
                 <img src="../assets/illustrastion_for_web.svg" alt="Illustration" class="illustration">
                 <p class="illustration-subtext">Baca buku? Udah ngga masalah lagi. Pakai Perpustakaan Digital SMPK Ignatius Slamet Riyadi aja!</p>
             </div>
-
-            <!-- Signup Container-->
-            <form id="signupForm" class="form-container">
-                <h1>Daftar</h1>
-                <p class="subtitle-text">Halo!! Senang bertemu denganmu! Bikin akun yuk dan lanjutin petualangan membaca kamu!</p>
-                <p class="auth-text">Username</p>
-                <input type="text" placeholder="Masukan Username" required>
-                <p class="auth-text">Email</p>
-                <input type="email" placeholder="Masukan Email Anda" required>
-                <p class="auth-text">Password</p>
-                <input type="password" placeholder="Masukan Password Anda" required>
-                <button class="btn btn-primary" type="submit">Buat Akun!</button>
-                <p class="signup-link">Udah punya akun? <a onClick="updateTitle('Masuk')" id="signInExc" href="#">Masuk aja disini!</a></p>
-            </form>
         </div>
+        
 
     <script src="../script/javascript.js" defer></script>
 </body>
