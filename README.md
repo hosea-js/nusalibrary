@@ -1,2 +1,2 @@
-# elibary-smpk-ign-slamer-website-concept
-This Project are a concept for E-Library for SMPK Ignatius Slamet Riyadi school, this project are not assosicated with anyone from the school.
+# DBB (Digitral Book Base)
+DBB is a web-based digital library platform developed using Node.JS, Express, and MariaDB. It aims to provide modern and accessible management system with support for authentication, digital book organisaztion, and future online reading features.
