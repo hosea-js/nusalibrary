@@ -1,4 +1,2 @@
 node_modules/
 .env
-var.env.test.js
-.gitignore
